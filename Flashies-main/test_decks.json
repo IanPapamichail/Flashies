@@ -1,0 +1,40 @@
+{
+    "decks": [
+        {
+            "cards": [
+                {
+                    "answer": "A201",
+                    "dueDate": "2023-01-01T00:00:00Z",
+                    "id": 201,
+                    "interval": 1,
+                    "masteryLevel": 0,
+                    "question": "Q201"
+                },
+                {
+                    "answer": "A202",
+                    "dueDate": "2023-01-01T00:00:00Z",
+                    "id": 202,
+                    "interval": 1,
+                    "masteryLevel": 0,
+                    "question": "Q202"
+                }
+            ],
+            "id": 101,
+            "name": "TestDeck"
+        },
+        {
+            "cards": [
+                {
+                    "answer": "A301",
+                    "dueDate": "2023-01-01T00:00:00Z",
+                    "id": 301,
+                    "interval": 1,
+                    "masteryLevel": 0,
+                    "question": "Q301"
+                }
+            ],
+            "id": 102,
+            "name": "AnotherDeck"
+        }
+    ]
+}

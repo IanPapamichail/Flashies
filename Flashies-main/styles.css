@@ -1,0 +1,154 @@
+/* Basic Reset */
+* {
+  margin: 0; /* Remove all margins from all elements */
+  padding: 0; /* Remove all paddings from all elements */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Container & Screen Layout */
+body {
+  font-family: Arial, sans-serif; /* Set the font family for the body */
+  background: linear-gradient(135deg, #355c7d, #6c5b7b, #c06c84); /* Apply a gradient background with defined colors */
+  min-height: 100vh; /* Set the minimum height of the body to 100% of the viewport height */
+  display: flex; /* Use flexbox layout for direct children */
+  justify-content: center; /* Center children horizontally */
+  align-items: center; /* Center children vertically */
+  color: #fff; /* Set the text color to white */
+}
+
+.container {
+  width: 90%; /* Set the container's width to 90% of its parent element */
+  max-width: 600px; /* Set the maximum width of the container to 600px */
+  background: rgba(255, 255, 255, 0.15); /* Set a white background with 15% opacity */
+  backdrop-filter: blur(8px); /* Apply a blur effect to the background */
+  border-radius: 10px; /* Round the corners of the container */
+  padding: 20px; /* Add padding inside the container */
+}
+
+/* Screens */
+.screen {
+  display: none; /* Hide all elements with class 'screen' */
+  text-align: center; /* Center text inside screen elements */
+}
+
+.screen.active {
+  display: block; /* Show the element with class 'active' */
+}
+
+/* Inputs & Buttons */
+input {
+  display: block; /* Make input elements block-level, so they occupy the full width of their parent */
+  width: 80%; /* Set the width of inputs to 80% of their parent */
+  margin: 10px auto; /* Center inputs horizontally and add vertical spacing */
+  padding: 10px; /* Add padding inside inputs */
+  border-radius: 5px; /* Round the corners of inputs */
+  border: none; /* Remove borders from inputs */
+}
+
+button {
+  margin: 5px; /* Add margin around buttons */
+  padding: 10px 15px; /* Add padding inside buttons */
+  border: none; /* Remove borders from buttons */
+  border-radius: 5px; /* Round the corners of buttons */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over buttons */
+  background: #ffd700; /* Set the background color of buttons */
+  color: #333; /* Set the text color of buttons */
+  transition: background 0.3s; /* Smooth the background color change when hovering */
+  font-weight: bold; /* Make the text inside buttons bold */
+}
+
+button:hover {
+  background: #ffce33; /* Change the background color when buttons are hovered */
+}
+
+/* Links */
+.link {
+  color: #00ffff; /* Set the text color of links to cyan */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over links */
+  text-decoration: underline; /* Underline text to indicate it's clickable */
+}
+
+/* Study Screen */
+.flashcard-container {
+  margin: 20px auto; /* Center the flashcard container horizontally and add vertical spacing */
+  max-width: 400px; /* Set the maximum width of the flashcard container */
+  background: #fff; /* Set the background color to white */
+  color: #333; /* Set the text color inside the flashcard container to dark gray */
+  padding: 20px; /* Add padding inside the flashcard container */
+  border-radius: 8px; /* Round the corners of the flashcard container */
+}
+
+.flashcard-text {
+  font-size: 1.2rem; /* Set the font size of flashcard text */
+  margin: 10px 0; /* Add vertical spacing above and below flashcard text */
+}
+
+.hidden {
+  display: none; /* Hide elements with the class 'hidden' */
+}
+
+/* Study Screen Buttons */
+.study-buttons {
+  margin-top: 20px; /* Add space above the buttons */
+  display: flex; /* Use flexbox for buttons */
+  justify-content: space-around; /* Distribute buttons evenly */
+}
+.study-buttons .know-btn {
+  background: #27ae60; /* Green background for "I Know It" button */
+  color: white; /* White text for better contrast */
+}
+
+.study-buttons .dont-know-btn {
+  background: #e74c3c; /* Red background for "I Don't Know It" button */
+  color: white; /* White text for better contrast */
+}
+
+.study-buttons .know-btn:hover {
+  background: #2ecc71; /* Lighter green on hover */
+}
+
+.study-buttons .dont-know-btn:hover {
+  background: #ff6b6b; /* Lighter red on hover */
+}
+
+/* Decks Screen */
+.deck-list {
+  margin: 20px 0; /* Add vertical spacing above and below the deck list */
+}
+
+.deck-item {
+  background: #fff; /* Set the background color of deck items to white */
+  color: #333; /* Set the text color of deck items to dark gray */
+  padding: 10px; /* Add padding inside deck items */
+  margin: 5px auto; /* Center deck items horizontally and add vertical spacing */
+  border-radius: 5px; /* Round the corners of deck items */
+  width: 80%; /* Set the width of deck items to 80% of their parent */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over deck items */
+}
+
+.deck-item:hover {
+  background: #eee; /* Change the background color when deck items are hovered */
+}
+
+/* Deck Edit */
+#deck-name-input {
+  width: 60%; /* Set the width of the deck name input field */
+  margin: 10px auto; /* Center the deck name input field horizontally and add vertical spacing */
+}
+
+.flashcard-edit {
+  background: #fff; /* Set the background color of flashcard edit items to white */
+  color: #333; /* Set the text color of flashcard edit items to dark gray */
+  margin: 5px auto; /* Center flashcard edit items horizontally and add vertical spacing */
+  padding: 10px; /* Add padding inside flashcard edit items */
+  border-radius: 5px; /* Round the corners of flashcard edit items */
+  width: 80%; /* Set the width of flashcard edit items to 80% of their parent */
+  text-align: left; /* Align the text inside flashcard edit items to the left */
+}
+
+/* Progress Screen */
+#progress-chart {
+  max-width: 300px; /* Set the maximum width of the progress chart */
+  margin: 20px auto; /* Center the progress chart horizontally and add vertical spacing */
+  display: block; /* Display the progress chart as a block element to ensure it is centered */
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flashies</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Chart.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="container">
+  <!-- LOGIN SCREEN -->
+  <div id="login-screen" class="screen active">
+    <h1>Login</h1>
+    <input type="text" id="login-username" placeholder="Username" />
+    <input type="password" id="login-password" placeholder="Password" />
+    <button id="login-btn">Login</button>
+    <p>Don't have an account?
+      <span id="open-signup" class="link">Sign Up</span>
+    </p>
+  </div>
+
+  <!-- SIGN-UP SCREEN -->
+  <div id="signup-screen" class="screen">
+    <h1>Sign Up</h1>
+    <input type="text" id="signup-username" placeholder="Username" />
+    <input type="password" id="signup-password" placeholder="Password" />
+    <button id="signup-btn">Sign Up</button>
+    <p>Already have an account?
+      <span id="open-login" class="link">Login</span>
+    </p>
+  </div>
+
+  <!-- MAIN SCREEN -->
+  <div id="main-screen" class="screen">
+    <h1>Welcome to Flashies!</h1>
+    <button id="start-study-btn">Start Studying</button>
+    <!-- NEW: View Progress button on Main Screen -->
+    <button id="view-progress-btn">View Progress</button>
+    <button id="feedback-btn">Feedback</button>
+    <button id="logout-btn">Logout</button>
+  </div>
+
+  <!-- STUDY SCREEN -->
+  <div id="study-screen" class="screen">
+    <h1>Study Mode</h1>
+    <div class="flashcard-container">
+      <div id="flashcard-question" class="flashcard-text"></div>
+      <div id="flashcard-answer" class="flashcard-text hidden"></div>
+    </div>
+    <div class="study-buttons">
+      <button id="show-answer-btn">Show Answer</button>
+      <button id="know-it-btn" class="know-btn">I Know This</button>
+      <button id="next-card-btn">Next Card</button>
+      <button id="dont-know-it-btn">i forgot it</button>
+      <button id="decks-btn">Decks</button>
+    </div>
+  </div>
+
+  <!-- DECKS SCREEN -->
+  <div id="decks-screen" class="screen">
+    <h1>Your Decks</h1>
+    <div id="deck-list" class="deck-list"></div>
+    <button id="add-deck-btn">Add Deck</button>
+    <button id="back-main-btn">Back</button>
+  </div>
+
+  <!-- DECK EDIT SCREEN -->
+  <div id="deck-edit-screen" class="screen">
+    <h1>Edit Deck</h1>
+    <input type="text" id="deck-name-input" placeholder="Deck Name" />
+    <div id="flashcards-list"></div>
+    <button id="save-deck-btn">Save Deck</button>
+    <button id="back-decks-btn">Back</button>
+  </div>
+
+  <!-- FEEDBACK SCREEN -->
+  <div id="feedback-screen" class="screen">
+    <h2>Feedback</h2>
+    <p>Contact: <strong>papamichailnickolas@gmail.com</strong></p>
+    <button id="close-feedback-btn">Close</button>
+  </div>
+
+  <!-- PROGRESS SCREEN -->
+  <div id="progress-screen" class="screen">
+    <h1>Your Progress</h1>
+    <canvas id="progress-chart" width="400" height="200"></canvas>
+    <button id="close-progress-btn">Close</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
